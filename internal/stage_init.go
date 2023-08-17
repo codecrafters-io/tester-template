@@ -9,7 +9,7 @@ import (
 // Example from the grep course
 func testInit(stageHarness *tester_utils.StageHarness) error {
 	// should exit with 0: echo "dog" | grep -E "d"
-	stageHarness.Logger.Infof("$ echo \"%s\" | ./your_grep.sh -E \"%s\"", "dog", "d")
+	stageHarness.Logger.Infof("$ echo \"%s\" | ./script.sh -E \"%s\"", "dog", "d")
 
 	result, err := stageHarness.Executable.RunWithStdin([]byte("dog"), "-E", "d")
 	if err != nil {
@@ -23,7 +23,7 @@ func testInit(stageHarness *tester_utils.StageHarness) error {
 	stageHarness.Logger.Successf("✓ Received exit code %d.", 0)
 
 	// should exit with 1: echo "dog" | grep -E "d"
-	stageHarness.Logger.Infof("$ echo \"%s\" | ./your_grep.sh -E \"%s\"", "dog", "f")
+	stageHarness.Logger.Infof("$ echo \"%s\" | ./script.sh -E \"%s\"", "dog", "f")
 
 	result, err = stageHarness.Executable.RunWithStdin([]byte("dog"), "-E", "f")
 	if err != nil {
