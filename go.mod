@@ -7,6 +7,7 @@ require github.com/codecrafters-io/tester-utils v0.1.46
 require (
 	github.com/davecgh/go-spew v1.1.0 // indirect
 	github.com/fatih/color v1.10.0 // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
