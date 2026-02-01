@@ -54,13 +54,5 @@ jobs:
         run: CODECRAFTERS_RECORD_FIXTURES=true make test
 
       - name: Update Fixtures
-        env:
-          BRANCH_NAME: ${{ github.head_ref }}
         run: |
-          git fetch origin "$BRANCH_NAME"
-          git checkout "$BRANCH_NAME"
-          git add internal/test_helpers/fixtures/
-          if ! git diff --cached --quiet; then
-            git commit -m "CI: Add regenerated fixtures"
-            git push
-          fi
+          git add . && git diff --cached --quiet || (git commit -m "CI: Add regenerated fixtures" && git push)
