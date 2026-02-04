@@ -14,5 +14,5 @@ jobs:
     if: github.event.label.name == 'regenerate-fixtures'
     uses: codecrafters-io/tester-utils/.github/workflows/fixtures.yml@master
     with:
-      tester_repo: "<tester-slug>" # TODO: Fill in repo name here e.g "redis-tester"
+      tester_repo: "grep-tester"
     secrets: inherit
