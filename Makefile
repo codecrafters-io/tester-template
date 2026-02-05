@@ -25,3 +25,8 @@ copy_course_file:
 
 update_tester_utils:
 	go get -u github.com/codecrafters-io/tester-utils
+
+setup:
+	echo "Setting up prerequisites"
+	## TODO: Insert prerequisites: These will be used by record-fixtures workflow
+	echo "Setup complete!"
