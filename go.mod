@@ -1,4 +1,4 @@
-module github.com/codecrafters-io/grep-tester
+module github.com/codecrafters-io/<fill_in_challenge_name>-tester
 
 go 1.20
 

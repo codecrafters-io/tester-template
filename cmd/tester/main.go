@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/codecrafters-io/grep-tester/internal"
+	"github.com/codecrafters-io/<fill_in_challenge_name>-tester/internal"
 )
 
 func main() {

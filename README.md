@@ -1,6 +1,6 @@
 # <fill_in_challenge_name> Challenge Tester
 
-This is a program that validates your progress on the "Build your own grep" challenge.
+This is a program that validates your progress on the "Build your own <fill_in_challenge_name>" challenge.
 
 ## Requirements for binary
 
